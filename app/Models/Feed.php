@@ -1007,7 +1007,7 @@ class FreshRSS_Feed extends Minz_Model {
 	}
 
 	private function faviconRebuild(): void {
-		$this->faviconDelete($this->hash());
+		FreshRSS_Feed::faviconDelete($this->hash());
 		$this->faviconPrepare(true);
 	}
 
